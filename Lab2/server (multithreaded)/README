@@ -1,0 +1,27 @@
+🧵 Multi-threaded TCP Echo Server
+This project implements a multi-client TCP Echo Server in Python that handles multiple clients concurrently using threads. It supports a maximum of 3 simultaneous clients. Any additional connections are rejected with a "SERVER BUSY" message.
+
+📌 Features
+    - Multi-threaded – Each client is handled in a separate thread.
+    - Client Limit – Allows up to 3 concurrent connections.
+    - Echo Server – Responds by echoing the exact data sent by each client.
+    - Real-time Logs – Displays connection, disconnection, and message details in the console.
+    - Busy Message – Informs clients when the server is full.
+    - Graceful Shutdown – Exit cleanly by typing exit or pressing Ctrl+C.
+
+🛠️ Requirements
+    -Python 3.x
+    -No external libraries (only standard library: socket, threading, sys)
+
+▶️ How to Run
+    1. Save the file as multi_echo_server.py.
+    2. Open a terminal and run:
+        '''python multi_echo_server.py [port]'''
+        *Replace [port] with a desired port number.
+        *If not specified, default is 7.
+
+⚠️ Notes
+Port numbers below 1024 may require elevated permissions (e.g., port 7).
+The server is single-process and multi-threaded; each client runs in a separate thread.
+Threads are marked as daemon, so they shut down automatically when the main thread exits.
+
