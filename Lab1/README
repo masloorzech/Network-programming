@@ -1,0 +1,46 @@
+## Program 1 – First Thread
+
+### Task:
+Create a program that displays "Hello World!!" in a separate thread using `CreateThread`. Before the main procedure finishes, ensure the program waits for the thread to complete using `WaitForSingleObject` or `Join`.
+
+### Requirements:
+- Create a new thread that outputs "Hello World!!".
+- Wait for the thread to finish before exiting the program.
+
+---
+
+## Program 2 – Manual Thread Resumption
+
+### Task:
+Create a program that spawns 10 threads. Each thread should print messages from 'Ax' to 'Zx', where `x` is the thread number. For thread number 10, it should display '0'. The threads should be created in a suspended state.
+
+Provide the user with the ability to control the program. This can be done through a GUI (e.g., input field to set the thread number, buttons to start and stop), or in a console application with commands such as `start 1` or `stop 1-3`.
+
+### Requirements:
+- 10 threads in total.
+- Threads should start in a suspended state.
+- User-controlled start and stop functionality.
+- Display messages from 'Ax' to 'Zx'.
+
+---
+
+## Program 3 – Synchronization
+
+### Task:
+This task is similar to Program 2, but with synchronization. Modify the program so that the message printing is only done by one thread at a time (critical section). Change the program so that all threads are resumed immediately upon starting, and remove the user control for thread start and stop.
+
+### Requirements:
+- Ensure only one thread executes the message printing at any given moment (critical section).
+- Synchronization mechanisms should be used to achieve this.
+- No user interaction for controlling threads.
+
+---
+
+## Program 4 – Asynchronous Calls
+
+### Task:
+Implement the solution from Program 2 using asynchronous calls. The user should only be able to cancel any tasks at any time.
+
+### Requirements:
+- Implement asynchronous calls to handle the task execution.
+- Allow users to cancel any ongoing tasks.

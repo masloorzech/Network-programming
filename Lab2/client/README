@@ -1,0 +1,38 @@
+🖧 TCP Echo Client
+A simple multithreaded TCP echo client written in Python. This client connects to a specified remote server and port using TCP/IP, sends user-input messages, and displays any responses received from the server. The communication continues until the user types exit.
+
+📌 Features
+    - Connects to a remote Echo server via IP address or domain name.
+    - Allows dynamic input of port and server address.
+    - Sends and receives raw data over TCP/IP.
+    - Displays the number of bytes sent and received.
+    - Receives messages in a background thread to support simultaneous input and output.
+    - Displays clear error and status messages.
+    - Handles unexpected input and connection issues gracefully.
+
+🧠 How It Works
+    1. The program creates a socket using the socket module and connects to the user-provided server address and port. It then:
+    2. Starts a background thread using threading.Thread() to receive messages.
+    3. Reads user input in the main thread and sends it to the server.
+    4. Prints received messages along with their byte size.
+    5. Closes the socket and exits cleanly when exit is typed.
+
+▶️ Running the Program
+    1. Make sure you have Python 3 installed.
+    2. Save the script as echo_client.py.
+    3. Run it in the terminal:
+    '''python echo_client.py'''
+    4. When prompted, enter:
+        - The server's domain name or IP address (avoid 127.0.0.1 unless testing locally).
+        - The port number of the Echo server.
+    5. Type messages to send. The server will echo them back.
+    6. To exit the client, type exit.
+
+🛠️ Requirements
+    - Python 3.x
+    - No external dependencies (uses built-in socket and threading modules)
+
+⚠️ Notes
+Ensure the server you are connecting to is up and listening on the specified port.
+Ports below 1024 may require administrative/root privileges.
+Avoid blocking reads using methods like readline() as the server may not send newline characters.

@@ -1,0 +1,35 @@
+🖧 TCP Echo Server
+A simple TCP echo server written in Python. This server listens for incoming TCP connections, accepts them, and echoes back any data received. It supports graceful shutdown via Ctrl+C and can be configured to use a custom port.
+
+📌 Features
+    - Accepts multiple sequential client connections.
+    - Echoes received messages back to the sender.
+    - Logs connection and data transfer activity with byte count.
+    - Handles unexpected disconnections and invalid port input.
+    - Gracefully exits on interrupt (Ctrl+C) using signal handling.
+
+🧠 How It Works
+    1. The server starts and prompts for a port number (default is 7, the standard Echo Protocol port).
+    2. It begins listening on all available network interfaces.
+    3. When a client connects:
+        - It logs the connection and begins receiving messages.
+        - Each received message is echoed back to the client.
+    4. If the client disconnects, the server waits for the next connection.
+    5. The server can be terminated cleanly with Ctrl+C, which closes the socket.
+
+▶️ Running the Server
+    1. Ensure Python 3 is installed.
+    2. Save the script as echo_server.py.
+    3. Run it in the terminal:
+    '''python echo_server.py'''
+    4. When prompted, enter a port number or press Enter to use the default (7).
+    5. The server will begin listening for connections.
+
+🛠️ Requirements
+    - Python 3.x
+    - No third-party libraries required (uses built-in socket, signal, and sys modules)
+
+⚠️ Notes
+Port numbers below 1024 may require administrative/root privileges.
+This server is single-threaded and handles one client at a time.
+For multithreading support, consider using the threading or asyncio modules.
