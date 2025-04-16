@@ -21,8 +21,8 @@ Implements a multi-client TCP echo service:
 
 ---
 
-### 🟣 Lab 3 – UDP Multicast
-Demonstrates how to send and receive multicast messages over UDP:
+### 🟣 Lab 3 – UDP Multicast/Broadcast
+Demonstrates how to send and receive multicast/Broadcast messages over UDP:
 - Multicast sender that broadcasts messages to a group
 - Multicast receiver that listens to a specific group and port
 
