@@ -1,0 +1,5 @@
+Solar Cells: 99
+Lithium Packs: 10
+Ion Regulators: 20
+Bio-Optic Fiber: 30
+Energy Cores: 40

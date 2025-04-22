@@ -32,13 +32,13 @@ Demonstrates how to send and receive multicast/Broadcast messages over UDP:
 Implements a basic HTTP server:
 - Accepts HTTP GET requests
 - Serves static content or simple responses
-- Uses `socket` programming or `http.server` module
+- Uses `http.server` module
 
 ---
 
 ## Requirements
 - Python 3.8+
-- No external dependencies (standard library only)
+- Specification written in separated readme
 
 ## Usage
 Each lab can be run independently.
