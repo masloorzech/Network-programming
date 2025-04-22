@@ -1,0 +1,6 @@
+Quantum Crystals: 10
+Frozen Cores: 20
+Mana Infused Glass: 21
+Arcane Dust: 37
+Synthlight Panels: 10
+

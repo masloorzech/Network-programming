@@ -1,0 +1,5 @@
+Steel Ingots: 40
+Iron Gears: 25
+Reinforced Bolts: 60
+Hydraulic Pistons: 15
+Titanium Plates: 20
